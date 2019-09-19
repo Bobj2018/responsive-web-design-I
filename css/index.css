@@ -285,12 +285,16 @@ footer {
 
 /* Service List */
 
+.services-header-img {
+	width: 100%;
+}
+
 .services {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 25px 0;
 	align-content: space-between;
-	height: 900px;
+	/* height: 875px; */
 }
 
 .services a {
@@ -304,18 +308,19 @@ footer {
 }
 
 .services section {
-	width: 420px;
-	height: 255px;
+	width: 48%;
+	height: 325px;
 	background: whitesmoke;
 	border: black solid 1px;
 	padding: 20px;
 	flex-direction: column;
+	align-items: space-between;
 	justify-content: space-around;
-	/* margin: 2px; */
+	margin: 15px 0;
 }
 
 .h2-services {
-	font-size: 27px;
+	font-size: 34px;
 	margin-top: 30px;
 }
 
@@ -384,6 +389,14 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
+
+	.facts {
+		flex-flow: column-reverse nowrap;
+	}
+
+	.img-facts img {
+		width: 100%;
+	}
 }
 
 @media (max-width: 500px) {
@@ -413,5 +426,18 @@ footer {
 	.content2_box,
 	.content3_box {
 		width: 100%;
+	}
+
+	.services {
+		flex-flow: column nowrap;
+	}
+
+	.services section {
+		width: 100%;
+		align-items: center;
+	}
+
+	.services h3 {
+		font-size: 36px;
 	}
 }
