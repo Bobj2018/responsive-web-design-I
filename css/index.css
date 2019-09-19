@@ -396,9 +396,13 @@ footer {
 		width: 100%;
 		text-align: center;
 		padding: 15px;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
+		border-top: 1px solid silver;
+		/* border-bottom: 1px solid silver; */
 		font-size: 21px;
+	}
+
+	nav a:last-child {
+		border-bottom: 1px solid silver;
 	}
 
 	.content2,
